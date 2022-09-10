@@ -154,9 +154,18 @@ body {
 /* Hero */
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  background-color: var(--primary-bg-color);
+  background: #c4c4c4;
   padding: 200px 0;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* linear-gradient(to right, rgba(47, 48, 58, 0.4)) */
 }
 
 .hero .title {
@@ -228,6 +237,18 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* .deal::before {
+  display: block;
+  content: '';
+  height: 120px;
+  outline: 1px solid blueviolet;
+  background-color: #f5f4fa;
+  background-image: url(../images/antenna\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+} */
+
 .activity,
 .team {
   display: flex;
@@ -293,10 +314,12 @@ body {
   margin-left: 8px;
 }
 
-.portfolio .btn.secondary:hover,
-.portfolio .btn.secondary:focus {
+.portfolio .btn:hover,
+.portfolio .btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Project */
@@ -310,6 +333,11 @@ body {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.project:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project:nth-child(3n) {

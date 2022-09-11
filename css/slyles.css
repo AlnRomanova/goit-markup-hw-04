@@ -234,6 +234,7 @@ body {
   /* outline: 1px solid blueviolet; */
   background-color: #f5f4fa;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .icon {
@@ -243,7 +244,8 @@ body {
 
 /* Work */
 
-.work-team {
+.work-team,
+.clients-title {
   margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -320,17 +322,30 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.social-link {
+.social-link-footer {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: var(--accent-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-white-color);
+  border-radius: 50%;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-white-color);
   border-radius: 50%;
 }
 
 .social-item {
+  display: flex;
+  flex-wrap: wrap;
   width: 44px;
   height: 44px;
 }
@@ -356,6 +371,26 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* Clients */
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-item:last-child {
+  margin-right: 0;
+}
 /* Project */
 
 .projects {
@@ -484,4 +519,28 @@ body {
 .mail:focus,
 .phone:focus {
   color: var(--accent-color);
+}
+
+.social .title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.social {
+}
+.social-list-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-item {
+  margin-right: 10px;
+}
+
+.social-item:last-child {
+  margin-right: 0;
 }

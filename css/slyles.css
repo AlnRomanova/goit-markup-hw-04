@@ -165,8 +165,7 @@ body {
 /* Hero */
 
 .hero {
-  width: 1600px;
-  height: 600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -482,7 +481,7 @@ body {
 
 .footer-link {
   display: flex;
-  flex-wrap: wrap;
+  align-items: baseline;
   gap: 70px;
 }
 
@@ -529,9 +528,9 @@ body {
   color: var(--accent-color);
 }
 
-.social {
+/* .social {
   padding: 12px 0 0 0;
-}
+} */
 
 .social .title {
   font-weight: 700;
